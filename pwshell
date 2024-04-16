@@ -1,0 +1,12 @@
+Install-Module -Name GPOZaurr
+
+OU
+
+Install-Module -Name GPOZaurr -AllowClobber -Force
+Invoke-GPOZaurr
+
+Invoke-GPOZaurr -Type <Nom du rapport>
+# Exemple n°1 :
+Invoke-GPOZaurr -Type GPOBroken
+# Exemple n°2 :
+Invoke-GPOZaurr -Type GPOBroken,GPOPermissions
